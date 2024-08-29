@@ -1,0 +1,50 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+:root {
+  --card-height: 200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-weight: bold;
+}
+
+.card {
+  height: var(--card-height);
+  width: calc(var(--card-height) * 2 / 3);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.center {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.bottom {
+  text-align: start;
+  transform: rotate(180deg);
+}
+
+.top > div:first-child,
+.bottom > div:first-child {
+  padding-left: 2px;
+}
+
+.top > div:nth-child(2),
+.bottom > div:nth-child(2) {
+  font-size: 1.3rem;
+}

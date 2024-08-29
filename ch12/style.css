@@ -1,0 +1,67 @@
+:root {
+  --red: #ff0002;
+  --white: #ffffff;
+  --flag-size: 200px;
+}
+
+.flag {
+  background-color: var(--red);
+  height: var(--flag-size);
+  width: var(--flag-size);
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross {
+  width: calc(var(--flag-size) * 5 / 8);
+  height: calc(var(--flag-size) * 5 / 8);
+  position: relative;
+}
+
+.cross-arm {
+  background-color: var(--white);
+  position: absolute;
+}
+
+.arm-1 {
+  height: calc(var(--flag-size) * 3 / 16);
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arm-2 {
+  height: 100%;
+  width: calc(var(--flag-size) * 3 / 16);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* explaination of the solution (how the transform is used to center the cross) */
+
+/* The transform property is used for precise centering in this context
+ because of how positioning and element dimensions work in CSS. 
+ 
+ Here's a detailed explanation:
+
+Initial positioning:
+When you set top: 50% or left: 50%, it moves the top-left corner of the element
+ to the middle of its container.
+
+
+The centering problem:
+This initial positioning isn't truly centered because the element's own size
+ isn't accounted for. Half of the element ends up below or to the right of the center point.
+
+
+How transform helps:
+transform: translateY(-50%) moves the element upwards by half of its own height.
+transform: translateX(-50%) moves the element leftwards by half of its own width.
+
+
+Why it's precise:
+The percentage in translate refers to the element's own dimensions, not its container.
+This means it always moves by exactly half of its size, 
+regardless of how big or small it is. */

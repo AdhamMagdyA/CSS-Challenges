@@ -1,0 +1,44 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+:root {
+  --orange: #e15307;
+  --white: #ffffff;
+  --green: #10af2a;
+  --flag-height: 200px;
+}
+
+.flag {
+  margin: 2rem auto;
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 7 / 6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+}
+
+.stripe {
+  width: 100%;
+  height: calc(var(--flag-height) / 3);
+}
+
+.red-stripe {
+  background-color: var(--orange);
+}
+
+.green-stripe {
+  background-color: var(--green);
+}
+
+.circle {
+  width: calc((var(--flag-height) / 3) * 85 / 100);
+  height: calc((var(--flag-height) / 3) * 85 / 100);
+  border-radius: 100%;
+  background-color: var(--orange);
+}

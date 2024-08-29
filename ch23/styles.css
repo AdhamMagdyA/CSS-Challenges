@@ -1,0 +1,93 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  background-color: var(--bg-main);
+}
+
+:root {
+  --font: "Karla", sans-serif;
+  --font-color: #fff;
+  --grad1: #feda75;
+  --grad2: #fa7e1e;
+  --grad3: #d62976;
+  --grad4: #962fbf;
+  --grad5: #4f5bd5;
+  --viewed: gray;
+  --bg-main: #000;
+  --bg-live: red;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.img-wrapper {
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid white;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.story p {
+  margin: 8px;
+}
+
+.stories-menu {
+  color: var(--font-color);
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+.story {
+  margin: 1rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* viewed stories */
+.viewed > .img-wrapper {
+  border: 2px solid var(--viewed);
+}
+
+/* new stories */
+.new > .img-wrapper {
+  border: 0px;
+  background: linear-gradient(
+    45deg,
+    var(--grad1),
+    var(--grad2),
+    var(--grad3),
+    var(--grad4),
+    var(--grad5)
+  );
+}
+.new img {
+  background-color: var(--bg-main);
+  padding: 2px;
+}
+
+/* live users */
+.live .img-wrapper::after {
+  content: "LIVE";
+  position: absolute;
+  background-color: var(--bg-live);
+  font-weight: bold;
+  padding: 1px 3px;
+  bottom: -8px;
+  font-size: xx-small;
+  border: 2px solid var(--bg-main);
+}
+.live .img-wrapper {
+  position: relative;
+}

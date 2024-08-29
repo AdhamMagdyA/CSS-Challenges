@@ -1,0 +1,37 @@
+.container {
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  background-color: rgb(59, 59, 218);
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+span::after {
+  content: "";
+  animation: carousel 4s infinite both;
+  animation-delay: 2s;
+}
+
+@keyframes carousel {
+  from {
+    content: "Coding";
+  }
+  25% {
+    content: "Anime";
+  }
+  50% {
+    content: "Sports";
+  }
+  75% {
+    content: "Gaming";
+  }
+  to {
+    content: "Coding";
+  }
+}

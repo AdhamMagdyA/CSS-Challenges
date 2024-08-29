@@ -1,0 +1,28 @@
+.container {
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: gray;
+  margin: 20px;
+  animation: loading 1s infinite alternate;
+}
+
+@keyframes loading {
+  from {
+    background-color: rgb(194, 192, 192);
+    width: 70px;
+    height: 70px;
+  }
+  to {
+    background-color: rgb(104, 103, 103);
+    width: 65px;
+    height: 65px;
+  }
+}

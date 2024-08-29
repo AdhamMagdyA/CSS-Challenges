@@ -1,0 +1,82 @@
+:root {
+  --font-main: "Noto Sans", sans-serif;
+  --main-bg: #000;
+  --profile-bg: #0d1117;
+  --profile-color: #c9d1d9;
+  --profile-img-border: #2e343b;
+  --username-font-color: #8b949e;
+  --username-font-weight: 400;
+  --btn-bg: #21262d;
+  --btn-color: #c9d1d9;
+  --btn-bg-hover: #30363d;
+  --btn-border: #373b43;
+  --btn-border-hover: #8c949e;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--main-bg);
+  color: #c9d1d9;
+  font-family: var(--font-main);
+}
+
+/* profile should not grow larger than 400px and shrinks no smaller than 250px */
+.profile-container {
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-content {
+  background-color: var(--profile-bg);
+  color: var(--profile-color);
+  padding: 15px 25px;
+  border-radius: 5px;
+  max-width: 400px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  max-width: 100%;
+  border: var(--profile-img-border) 1px solid;
+}
+
+button {
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  border: var(--btn-border) 1px solid;
+  width: 100%;
+  text-align: center;
+  padding: 3px 10px;
+  border-radius: 4px;
+  /* buttons do not inherit the font of the parent by default */
+  /* instead they inherit the default font of the browser */
+  font-family: inherit;
+}
+
+button:hover {
+  border: var(--btn-border-hover) 1px solid;
+  background-color: var(--btn-bg-hover);
+}
+
+h3 {
+  margin: 0;
+  color: var(--username-font-color);
+  font-weight: var(--username-font-weight);
+  font-size: medium;
+}
+
+h2 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}

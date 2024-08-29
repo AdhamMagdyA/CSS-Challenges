@@ -1,0 +1,32 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --black: #000000;
+  --red: #de0002;
+  --yellow: #ffce00;
+  --flag-height: 150px;
+}
+
+.flag {
+  margin: 2rem auto;
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 5 / 3);
+}
+
+.stripe {
+  height: calc(var(--flag-height) / 3);
+}
+
+.red {
+  background-color: var(--red);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+.black {
+  background-color: var(--black);
+}

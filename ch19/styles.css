@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: red;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --card-height: 200px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.card {
+  border: 1.5px solid black;
+  height: var(--card-height);
+  width: calc(var(--card-height) * 2 / 3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.middle {
+  display: grid;
+  /* background-color: bisque; */
+  width: 100%;
+  margin: 2px;
+  grid:
+    "main main"
+    "main main";
+  justify-items: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.right {
+  transform: rotate(180deg);
+}
+
+.middle :nth-child(3),
+.middle :nth-child(4) {
+  transform: scaleY(-1);
+}
+
+.left > div:first-child,
+.right > div:first-child {
+  padding-left: 2px;
+}
+
+.left > div:nth-child(2),
+.right > div:nth-child(2) {
+  font-size: 1.3rem;
+  margin-top: -8px;
+}

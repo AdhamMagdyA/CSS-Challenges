@@ -1,0 +1,32 @@
+.container,
+.circle {
+  height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  border-radius: 100%;
+}
+
+.black-circle {
+  background-color: black;
+  width: 400px;
+  height: 400px;
+}
+.blue-circle {
+  background-color: blue;
+  width: 300px;
+  height: 300px;
+}
+.red-circle {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+}
+.yellow-circle {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+}

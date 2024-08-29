@@ -1,0 +1,24 @@
+:root {
+  --flag-height: 200px;
+  --red: #bc022c;
+}
+
+body {
+  background-color: black;
+}
+.flag {
+  height: var(--flag-height);
+  width: calc(var(--flag-height) * 3 / 2);
+  margin: 2rem auto;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  height: calc(var(--flag-height) * 3 / 5);
+  width: calc(var(--flag-height) * 3 / 5);
+  background-color: var(--red);
+  border-radius: 100%;
+}

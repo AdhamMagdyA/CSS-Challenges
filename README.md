@@ -11,6 +11,15 @@ Prepare to be dazzled by:
 - 🌊 Smooth-as-butter animations
 - 📱 Responsive designs that'll make any device swoon
 
+## 🏆 Challenge Source
+
+These awesome challenges are sourced from Scrimba's CSS Challenges course. You can find the original challenges here:
+
+[Scrimba CSS Challenges](https://v2.scrimba.com/css-challenges-c02p)
+
+I've taken on each of these challenges to sharpen my CSS skills and showcase my ability to transform designs into code. While the challenges come from Scrimba, the implementations here are my own work.
+
+
 ## 🚀 Launch Sequence
 
 1. Clone this bad boy: `git clone https://github.com/your-username/your-repo-name.git`

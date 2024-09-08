@@ -15,7 +15,7 @@ Prepare to be dazzled by:
 
 These awesome challenges are sourced from Scrimba's CSS Challenges course. You can find the original challenges here:
 
-[Scrimba CSS Challenges](https://v2.scrimba.com/css-challenges-c02p)
+<a href="https://v2.scrimba.com/css-challenges-c02p" target="_blank">Scrimba CSS Challenges</a>
 
 I've taken on each of these challenges to sharpen my CSS skills and showcase my ability to transform designs into code. While the challenges come from Scrimba, the implementations here are my own work.
 

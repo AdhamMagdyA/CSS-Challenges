@@ -1,11 +1,17 @@
 :root {
   --flag-height: 150px;
+  --red: #ed2938;
+  --white: #fff;
+  --blue: #002495;
+}
+
+body {
+  background-color: black;
 }
 
 .container {
   height: 300px;
   width: 300px;
-  border: dashed black 1px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
@@ -30,13 +36,13 @@
 }
 
 .red {
-  background-color: red;
+  background-color: var(--red);
 }
 
-.black {
-  background-color: black;
+.blue {
+  background-color: var(--blue);
 }
 
 .white {
-  background-color: white;
+  background-color: var(--white);
 }
